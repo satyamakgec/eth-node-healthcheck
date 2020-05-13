@@ -1,6 +1,7 @@
+#!/usr/bin/env node
+
 const Web3 = require('web3');
 const http = require('http');
-require('dotenv').config();
 
 const host = process.env.RPC_HOST || 'localhost';
 const etherscan_web3 = new Web3(new Web3.providers.HttpProvider(process.env.CONNECTION_URL));
